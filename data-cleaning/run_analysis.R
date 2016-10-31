@@ -1,5 +1,3 @@
-setwd("~/Documents/coursera/data-cleaning/peer/")
-
 library(dplyr)
 
 # Create dir, download files and unzip
