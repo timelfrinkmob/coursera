@@ -41,3 +41,6 @@ subject <- rbind(subjectTrain, subjectTest)
 
 tidy <- cbind(Subject = subject$V1, Activity = Y$V2, data)
 tidyMeans <- tidy %>% group_by(Subject,Activity) %>% summarise_each(funs(mean))
+
+# Output
+write.table(tidyMeans, "data/tidyMeans.txt", row.names = FALSE)
